@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <ul>
+    <hi>Lista de postas</hi>
+    {% for posta in postas  %}
+        <li> {{ posta.titulo}} dice: {{posta.contenido}} y se creo en; {{posta.fecha_creacion}}</li>
+    {% endfor %}
+   </ul> 
+</body>
+</html>

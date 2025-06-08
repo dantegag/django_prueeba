@@ -17,10 +17,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from lol import views
+#from lol import views
+from blog import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
- path("ver/", views.index, name="index")
+ 
+ path("ojear/", views.posta_list, name="post_list")
 ]
     
 
